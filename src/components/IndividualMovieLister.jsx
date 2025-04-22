@@ -61,7 +61,7 @@ function IndividualMovieLister() {
         setIsMovieLoading(true);
         setError(null);
 
-        const response = await axios.get(`${BASE_URL}/api/movies/${movie_id}`);
+        const response = await axios.get(`https://movie-store-backend-5pye.onrender.com/api/movies/${movie_id}`);
         setMovie(response.data);
       } catch (error) {
         if (error.response && error.response.status === 404) {
