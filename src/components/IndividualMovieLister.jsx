@@ -19,7 +19,7 @@ function IndividualMovieLister() {
 
   const handleDownload = (url, headers) => {
     const encodedHeaders = btoa(JSON.stringify(headers)); // base64 encode
-    const downloadUrl = `${BASE_URL}/api/download?url=${encodeURIComponent(url)}&headers=${encodeURIComponent(encodedHeaders)}`;
+    const downloadUrl = `https://movie-store-backend-5pye.onrender.com/api/download?url=${encodeURIComponent(url)}&headers=${encodeURIComponent(encodedHeaders)}`;
   
     // Create anchor to trigger download
     const a = document.createElement("a");

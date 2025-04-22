@@ -12,7 +12,7 @@ function MovieSlider() {
   useEffect(() => {
     const fetchTopMovies = async () => {
       try {
-        const response = await axios.get(`${BASE_URL}/api/top_rated_movies`);
+        const response = await axios.get(`https://movie-store-backend-5pye.onrender.com/api/top_rated_movies`);
         setMovies(response.data);
       } catch (err) {
         console.error("Failed to fetch top movies:", err);
